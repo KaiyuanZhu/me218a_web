@@ -124,7 +124,7 @@ hr.small {
 }
 
 .sidebar-nav > .sidebar-brand a:hover {
-    color: #4B4941;
+    color: #fff;
     background: none;
 }
 
@@ -166,7 +166,8 @@ hr.small {
 
 
 .super_mario {
-    width: 80%;
+    width: 90%;
+    height: 15%
 }
 /* About */
 
@@ -174,16 +175,8 @@ hr.small {
     padding: 50px 0;
 }
 
-/* Services */
 
-.services {
-    padding: 50px 0;
-    background-color: #E3C731;
-}
 
-.service-item {
-    margin-bottom: 30px;
-}
 
 /* Callout */
 
@@ -227,17 +220,6 @@ hr.small {
     margin: 10px;
 }
 
-/* Map */
-
-.map {
-    height: 500px;
-}
-
-@media(max-width:768px) {
-    .map {
-        height: 75%;
-    }
-}
 
 /* Footer */
 
