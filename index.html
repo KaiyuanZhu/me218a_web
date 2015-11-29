@@ -41,7 +41,7 @@
                 <a href="#top"  onclick = $("#menu-close").click(); >Home</a>
             </li>
             <li>
-                <a href="#description" onclick = $("#menu-close").click(); >Product Description</a>
+                <a href="#description" onclick = $("#menu-close").click(); >Project Description</a>
             </li>
             <li>
                 <a href="#overall" onclick = $("#menu-close").click(); >Overall Design</a>
@@ -70,21 +70,49 @@
     <!-- Header -->
     <header id="top" class="header">
         <div class="text-vertical-center">
-            <img class="super_mario" src="img/super_mario.png">
+            <img class="super_mario" src="img/Super_Mario.png">
             <h2>ME 218A Project</h2>
             <h3>Kaiyuan, Rolando, Danny &amp;  Biao</h3>
             <br>
-            <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
+            <a href="#description" class="btn btn-dark btn-lg">Find Out More</a>
         </div>
     </header>
 
+
+    <!-- Callout -->
+
     <!-- About -->
     <section id="description" class="about">
+     <div class="callout">
+        <div class="text-vertical-center">
+            <h2>Project Description</h2>
+        </div>
+    </div>
+
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Project Description</h2>
-                    <p class="lead">This theme features some wonderful photography courtesy of <a target="_blank" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a>.</p>
+                    <h3>The design challenge</h3>
+                </div>
+                <div class="col-lg-12">
+                    <p class="lead">The presidential candidates are looking for ways to woo the voters of California and settled on commissioning machines to end the California drought. The goal is to make a Drought Abatement Machine (DAM) that inspires the voters with fun, memorable and attractive solutions to the drought. </p>
+                </div>
+                <div class="row"></div>
+                    <h3 class="text-center">Design specification</h3>
+                    <div class="col-lg-12 content">
+                    <li>The DAM should have a creative display of the passage of time.</li>
+                    <li>The DAM should reset 60 seconds after the voter starts interacting. </li>
+                    <li>The DAM should be impossible for your candidate to solve the drought by him/herself. </li>
+                    <li>The DAM should involve at least 3 distinct user interactions.</li>
+                    <li>Each Voter must participate in at least two of these interactions. </li>
+                    <li>The DAM should require large scale motion on the part of the Voters for at least one of its interactions.</li>
+                    <li>At least one of the user interactions must be interpreted as an analog input.</li>
+                    <li>At least one of the user interactions must involve non-contact sensing. </li>
+                    <li>Each DAM must provide the user with (audio/haptic/tactile) feedback about his/her actions. </li>
+                    <li>When the Voters succeed in abating the drought, the DAM should provide an exciting audio and/or visual experience.</li>
+                    <hr></hr>
+
+
                 </div>
             </div>
             <!-- /.row -->
@@ -94,21 +122,49 @@
 
 
 
-    <!-- Callout -->
-    <aside class="callout">
-        <div class="text-vertical-center">
-            <h1>Vertically Centered Text</h1>
-        </div>
-    </aside>
 
         <!-- About -->
     <section id="overall" class="about">
+        <div class="callout">
+                    <div class="text-vertical-center">
+            <h2>Overall Design</h2>
+        </div>
+    </div>
+
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Overall Design</h2>
-                    <p class="lead">This theme features some wonderful photography courtesy of <a target="_blank" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a>.</p>
+                <div class="col-lg-12">
+                            <br></br>
+                    <p class="lead">We invited Super Mario Bro to shoot the clouds with special chemicals that facilitates precipitation. The Super Mario Bro should shoot enough clouds before the sunset to make the rain. To achieve the goal, Super Mario Bro (two players) should work together to powering the super gun by feeding the encoded energy levels to the hand panels. </p>
                 </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-md-offset-1"><img class = "overall img-responsive" src="img/overall_design1.png"></div>
+                <div class="col-md-4 col-md-offset-2"><img class = "overall img-responsive" src="img/overall_design2.png"></div>
+            </div>
+            <div class="row">
+
+                <div class="col-lg-12 content">
+                <h3>Hand Pressure Input</h3>
+
+                <p>Each player should put on one of their hand on the pressure panel while pressing the side button with the other hand to activate the pressure panel. The two hand pressure panels have force sensors underneath. The microcontroller takes the difference from the two force sensors as the control signal to drive the needle servo. </p>
+
+                <h3>Balance the Dial</h3>
+
+                <p>The needle on the dial moves to left or right depends on the difference of the signals received from the hand pressure panels. The goal is the move the needle pointing to the lit LED on the dial in order the charge the super gun. </p>
+
+                <h3>Sunset</h3>
+
+                <p>The sun lowers as the passenger of time for the game. It will eventually hide behind the snow mountains.Once the game resets, it will raise up again.</p>
+
+                <h3>Shoot the super gun</h3>
+
+                <p>Once the gun is fully charged, i.e. the power level LEDs all light up, players can use the super gun to aim and shoot the target LED on the one of the cloud. After successfully shoot three clouds. One blue water level LED will be light up, indicating some amount of water being produced in the cloud.  The gun needs to be charged again. Players will get vibrational feedback from the gun once they successfully shoot a target. </p>
+
+                <h3>Make the rain</h3>
+
+                <p>Once all water level LEDs light up before the sunset, all LEDs flash, just like a big heavy rain.</p>
+                <hr></hr>
             </div>
             <!-- /.row -->
         </div>
@@ -117,43 +173,46 @@
 
     <!-- Portfolio -->
     <section id="mechanical" class="portfolio">
+       <div class="callout">
+                    <div class="text-vertical-center">
+            <h2>Mechanical Design</h2>
+        </div>
+    </div>
         <div class="container">
             <div class="row">
+                <br></br>
                 <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h2>Mechanical Design</h2>
-                    <hr class="small">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-1.jpg">
+                                <a href="#cloud">
+                                    <img class="img-portfolio img-responsive" src="img/cloud.png">
                                 </a>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-2.jpg">
+                                <a href="#panel">
+                                    <img class="img-portfolio img-responsive" src="img/panel.png">
                                 </a>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-3.jpg">
+                                <a href="#dial">
+                                    <img class="img-portfolio img-responsive" src="img/dial.png">
                                 </a>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-4.jpg">
+                                <a href="#gun">
+                                    <img class="img-portfolio img-responsive" src="img/gun.png">
                                 </a>
                             </div>
                         </div>
                     </div>
                     <!-- /.row (nested) -->
-                    <a href="#" class="btn btn-dark">View More Items</a>
                 </div>
                 <!-- /.col-lg-10 -->
             </div>
@@ -162,40 +221,40 @@
         <!-- /.container -->
     </section>
 
-    <!-- Call to Action -->
-    <aside class="call-to-action bg-primary">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h3>The buttons below are impossible to resist.</h3>
-                    <a href="#" class="btn btn-lg btn-light">Click Me!</a>
-                    <a href="#" class="btn btn-lg btn-dark">Look at Me!</a>
-                </div>
-            </div>
-        </div>
-    </aside>
 
             <!-- About -->
     <section id="electrical" class="about">
-        <div class="container">
+               <div class="callout">
+                    <div class="text-vertical-center">
+            <h2>Electrical Design</h2>
+        </div>
+    </div>
+    <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Electrical Design</h2>
                     <p class="lead">This theme features some wonderful photography courtesy of <a target="_blank" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a>.</p>
                 </div>
             </div>
             <!-- /.row -->
         </div>
+
         <!-- /.container -->
     </section>
 
             <!-- About -->
     <section id="software" class="about">
+     <div class="callout">
+                    <div class="text-vertical-center">
+            <h2>Software Design</h2>
+        </div>
+    </div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Software Design</h2>
-                    <p class="lead">This theme features some wonderful photography courtesy of <a target="_blank" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a>.</p>
+                    <h3>State Diagram</h3>
+                </div>
+                <div class="col-lg-8 col-lg-offset-2">
+                    <img class="stateDiagram img-responsive" src="img/state_diagram.png">
                 </div>
             </div>
             <!-- /.row -->
@@ -221,9 +280,19 @@
     <section id="gem_wisdom" class="about">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Gem of Wisdom</h2>
-                    <p class="lead">This theme features some wonderful photography courtesy of <a target="_blank" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a>.</p>
+                <div class="col-lg-12">
+                    <h2 class="text-center">Gem of Wisdom</h2>
+                </div>
+            </div>
+        <div class="row">
+                <div class="col-lg-12">
+                    <li>Plan how all the circuits will be combined together in your machine before soldering or 
+                        building the circuit on the breadboard.</li>
+                    <li>Finish the CAD first to make it easy to design how to integrate all the circuits. </li>
+                    <li>When making wires and connectors make sure they are uniform and following the same rule. </li>
+                    <li>Before powering the circuit, make sure all the power and ground are connected correctly. </li>
+                    <li>Make standardized commenting for the code and make backups before editing the code. </li>
+                    <li>Try to build the hardware stable and robust at the first time so that we don’t need to touch it later on. </li>
                 </div>
             </div>
             <!-- /.row -->
@@ -252,11 +321,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h4><strong>Start Bootstrap</strong>
+                    <h4><strong>Super Mario Rain Maker</strong>
                     </h4>
-                    <p>3481 Melrose Place<br>Beverly Hills, CA 90210</p>
+                    <h4>ME218A Course Project</h4>
+                    <p>Bldg 550<br>Stanford, CA 94305</p>
                     <ul class="list-unstyled">
-                        <li><i class="fa fa-phone fa-fw"></i> (123) 456-7890</li>
                         <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:name@example.com">name@example.com</a>
                         </li>
                     </ul>
@@ -269,11 +338,11 @@
                             <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
+                            <a href="#"><i class="fa fa-linkedin fa-fw fa-3x"></i></a>
                         </li>
                     </ul>
                     <hr class="small">
-                    <p class="text-muted">Copyright &copy; Your Website 2014</p>
+                    <p class="text-muted">Copyright &copy; Your Website 2015</p>
                 </div>
             </div>
         </div>

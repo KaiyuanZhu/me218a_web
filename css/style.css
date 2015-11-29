@@ -169,6 +169,10 @@ hr.small {
     width: 90%;
     height: 15%
 }
+
+.super_mario_bro {
+    max-height: 200px;
+}
 /* About */
 
 .about {
@@ -182,14 +186,20 @@ hr.small {
 
 .callout {
     display: table;
-    width: 100%;
-    height: 400px;
+    width: 90%;
+    height: 180px;
     color: #fff;
-    background: url(../img/callout.jpg) no-repeat center center scroll;
+    margin: auto;
+    padding-top: 0;
+    background: url(../img/callout.png) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+}
+
+.callout h2{
+    padding-top: 90px;
 }
 
 /* Portfolio */
@@ -204,6 +214,7 @@ hr.small {
 
 .img-portfolio {
     margin: 0 auto;
+    padding: 20px;
 }
 
 .img-portfolio:hover {
@@ -219,10 +230,18 @@ hr.small {
 .call-to-action .btn {
     margin: 10px;
 }
+.content {
+    font-size: 1.1em;
+}
 
+.overall {
+    max-width: 400px;
+}
 
 /* Footer */
 
 footer {
     padding: 100px 0;
+    height : 620px;
+    background: url(../img/footer_background.jpg) no-repeat center center fixed;
 }
